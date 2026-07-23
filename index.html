@@ -4,79 +4,58 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>homepage</title>
+    <title>app</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
-
   <body>
-    <div class="swiper-flex-container">
 
-      <div>
-        <div class="swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="/onepiece01_luffy.png" alt="ルフィ"></div>
-            <div class="swiper-slide"><img src="/onepiece02_zoro_bandana.png" alt="ゾロ"></div>
-            <div class="swiper-slide"><img src="/onepiece03_nami.png" alt="ナミ"></div>
-          </div>
-          
-          <div class="swiper-pagination"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-scrollbar"></div>
-        </div>
-       <div id="swiper-text" class="swiper-text-panel"></div>
+    <div class="image-row">
+      <div class="image-box">
+        <img id="luffy-img" src="/onepiece01_luffy.png" alt="ルフィ" style="cursor: pointer;">
+        <div class="image-title">ルフィ</div>
       </div>
-
-<div>
-  <div class="swiper1">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"></div>
-      <div class="swiper-slide"></div>
-      <div class="swiper-slide"></div>
+      <div class="image-box">
+        <img id="zoro-img" src="/onepiece02_zoro_bandana.png" alt="ゾロ" style="cursor: pointer;">
+        <div class="image-title">ゾロ</div>
+      </div>
+      <div class="image-box">
+        <img id="nami-img" src="/onepiece03_nami.png" alt="ナミ" style="cursor: pointer;">
+        <div class="image-title">ナミ</div>
+      </div>
+      <div class="image-box">
+        <img id="usopp-img" src="/onepiece04_usopp_sogeking.png" alt="ウソップ" style="cursor: pointer;">
+        <div class="image-title">ウソップ</div>
+      </div>
+      <div class="image-box">
+        <img id="sanji-img" src="/onepiece05_sanji.png" alt="サンジ" style="cursor: pointer;">
+        <div class="image-title">サンジ</div>
+      </div>
     </div>
-    
-    <div class="swiper-pagination"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-scrollbar"></div>
-  </div>
-  <div id="swiper1-text" class="swiper-text-panel"></div>
-</div>
 
-    </div> <form id="basic_form">
-      <input
-        id="basic_name"
-        name="name"
-        type="text"
-        placeholder="Enter your name"
-      />
-      <input
-        id="basic_email"
-        name="email"
-        type="text"
-        placeholder="Enter your email"
-      />
-      <input
-        id="basic_password"
-        name="password"
-        type="text"
-        placeholder="Enter your password"
-      />
-      <input
-        id="basic_age"
-        name="age"
-        type="text"
-        placeholder="Enter your age"
-      />
-      <input
-        id="basic_address"
-        name="address"
-        type="text"
-        placeholder="Enter your address"
-      />
+    <div class="image-row">
+      <div class="image-box">
+        <img id="chopper-img" src="/onepiece06_chopper.png" alt="チョッパー" style="cursor: pointer;">
+        <div class="image-title">チョッパー</div>
+      </div>
+      <div class="image-box">
+        <img id="robin-img" src="/onepiece07_robin.png" alt="ロビン" style="cursor: pointer;">
+        <div class="image-title">ロビン</div>
+      </div>
+      <div class="image-box">
+        <img id="franky-img" src="/onepiece08_franky.png" alt="フランキー" style="cursor: pointer;">
+        <div class="image-title">フランキー</div>
+      </div>
+      <div class="image-box">
+        <img id="brook-img" src="/onepiece09_brook.png" alt="ブルック" style="cursor: pointer;">
+        <div class="image-title">ブルック</div>
+      </div>
+      <div class="image-box">
+        <img id="jinbe-img" src="/onepiece10_jinbe.png" alt="ジンベエ" style="cursor: pointer;">
+        <div class="image-title">ジンベエ</div>
+      </div>
+    </div>
 
-      <button type="submit">Submit</button>
-    </form>
-
-    <script type="module" src="/src/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script type="module" src="/src/app.js"></script>
   </body>
 </html>
