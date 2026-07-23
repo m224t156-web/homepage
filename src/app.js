@@ -62,8 +62,8 @@ namiImg.addEventListener('click', () => {
   });
 });
 
+//ウソップ
 const usoppImg = document.getElementById('usopp-img');
-
 usoppImg.addEventListener('click', () => {
   window.anime({
     targets: usoppImg,
