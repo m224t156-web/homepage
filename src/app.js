@@ -26,10 +26,26 @@ zoroImg.addEventListener('click', () => {
     targets: zoroImg,
     rotate: '+=3turn', 
     scale: [
-      { value: 0.7, duration: 200, easing: 'easeOutQuad' }, 
+      { value: 0.7, duration: 300, easing: 'easeOutQuad' }, 
       { value: 1.1, duration: 300, easing: 'easeOutQuad' }, 
       { value: 1.0, duration: 300, easing: 'easeOutElastic(1, .6)' } 
     ],
     easing: 'easeOutCubic',
+  });
+});
+
+const namiImg = document.getElementById('nami-img');
+
+namiImg.addEventListener('click', () => {
+  window.anime({
+    targets: namiImg,
+    opacity: [
+      { value: 0, duration: 500, easing: 'easeOutQuad' },
+      { value: 1, duration: 500, easing: 'easeInQuad' } 
+    ],
+    filter: [
+      { value: 'blur(30px)', duration: 500, easing: 'easeOutQuad' },
+      { value: 'blur(0px)', duration: 500, easing: 'easeInQuad' }
+    ],
   });
 });
