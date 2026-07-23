@@ -20,7 +20,6 @@ luffyImg.addEventListener('click', () => {
 
 //ゾロ
 const zoroImg = document.getElementById('zoro-img');
-
 zoroImg.addEventListener('click', () => {
   window.anime({
     targets: zoroImg,
@@ -34,8 +33,8 @@ zoroImg.addEventListener('click', () => {
   });
 });
 
+//ナミ
 const namiImg = document.getElementById('nami-img');
-
 namiImg.addEventListener('click', () => {
   window.anime({
     targets: namiImg,
@@ -47,5 +46,25 @@ namiImg.addEventListener('click', () => {
       { value: 'blur(30px)', duration: 500, easing: 'easeOutQuad' },
       { value: 'blur(0px)', duration: 500, easing: 'easeInQuad' }
     ],
+  });
+});
+
+//ウソップ
+const usoppImg = document.getElementById('usopp-img');
+usoppImg.addEventListener('click', () => {
+  window.anime({
+    targets: usoppImg,
+    translateX: [
+      { value: -40, duration: 300, easing: 'easeOutQuad' },
+      { value: 0, duration: 700, easing: 'easeOutElastic(1, .4)' }
+    ],
+    rotate: [
+      { value: -12, duration: 300, easing: 'easeOutQuad' },
+      { value: 0, duration: 700, easing: 'easeOutElastic(1, .4)' }
+    ],
+    scale: [
+      { value: 0.7, duration: 300, easing: 'easeOutQuad' },
+      { value: 1.0, duration: 700, easing: 'easeOutElastic(1, .4)' }
+    ]
   });
 });
